@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D27E13B6-1979-4801-B833-04BBFA710822}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Elena</RootNamespace>
+    <AssemblyName>4e MCS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FileHelpers">
+      <HintPath>..\..\..\FileHelpers\Binaries\DotNet 2.0\FileHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbilitiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbilitiesForm.Designer.cs">
+      <DependentUpon>AbilitiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicAttackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicAttackForm.Designer.cs">
+      <DependentUpon>BasicAttackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GrimoireHandler.cs" />
+    <Compile Include="InputWeakSpot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputWeakSpot.Designer.cs">
+      <DependentUpon>InputWeakSpot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputEnhancement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputEnhancement.Designer.cs">
+      <DependentUpon>InputEnhancement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputInflictsStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputInflictsStatus.Designer.cs">
+      <DependentUpon>InputInflictsStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputAddedStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputAddedStatus.Designer.cs">
+      <DependentUpon>InputAddedStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputEffectType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputEffectType.Designer.cs">
+      <DependentUpon>InputEffectType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputOptions.Designer.cs">
+      <DependentUpon>InputOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputOtherAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputOtherAction.Designer.cs">
+      <DependentUpon>InputOtherAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputTectonicType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputTectonicType.Designer.cs">
+      <DependentUpon>InputTectonicType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputEnhanceStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputEnhanceStatus.Designer.cs">
+      <DependentUpon>InputEnhanceStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputStartsStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputStartsStatus.Designer.cs">
+      <DependentUpon>InputStartsStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputAdditionalCost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputAdditionalCost.Designer.cs">
+      <DependentUpon>InputAdditionalCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputCounter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputCounter.Designer.cs">
+      <DependentUpon>InputCounter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputStatus.Designer.cs">
+      <DependentUpon>InputStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputRanks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputRanks.Designer.cs">
+      <DependentUpon>InputRanks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputElement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputElement.Designer.cs">
+      <DependentUpon>InputElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputElementFreestyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputElementFreestyle.Designer.cs">
+      <DependentUpon>InputElementFreestyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputElementPresets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputElementPresets.Designer.cs">
+      <DependentUpon>InputElementPresets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputImmuneStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputImmuneStatus.Designer.cs">
+      <DependentUpon>InputImmuneStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputAutoStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputAutoStatus.Designer.cs">
+      <DependentUpon>InputAutoStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputName.Designer.cs">
+      <DependentUpon>InputName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputPlantStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputPlantStatus.Designer.cs">
+      <DependentUpon>InputPlantStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputSelectAbility.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputSelectAbility.Designer.cs">
+      <DependentUpon>InputSelectAbility.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonsterAbility.cs" />
+    <Compile Include="MonsterProperty.cs" />
+    <Compile Include="Monster.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="PropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertiesForm.Designer.cs">
+      <DependentUpon>PropertiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Xerox.cs" />
+    <EmbeddedResource Include="AbilitiesForm.resx">
+      <DependentUpon>AbilitiesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicAttackForm.resx">
+      <DependentUpon>BasicAttackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputWeakSpot.resx">
+      <DependentUpon>InputWeakSpot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputEnhancement.resx">
+      <DependentUpon>InputEnhancement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputInflictsStatus.resx">
+      <DependentUpon>InputInflictsStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputAddedStatus.resx">
+      <DependentUpon>InputAddedStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputEffectType.resx">
+      <DependentUpon>InputEffectType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputOptions.resx">
+      <DependentUpon>InputOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputOtherAction.resx">
+      <DependentUpon>InputOtherAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputTectonicType.resx">
+      <DependentUpon>InputTectonicType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputEnhanceStatus.resx">
+      <DependentUpon>InputEnhanceStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputStartsStatus.resx">
+      <DependentUpon>InputStartsStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputAdditionalCost.resx">
+      <DependentUpon>InputAdditionalCost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputCounter.resx">
+      <DependentUpon>InputCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputStatus.resx">
+      <DependentUpon>InputStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputElement.resx">
+      <DependentUpon>InputElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputElementFreestyle.resx">
+      <DependentUpon>InputElementFreestyle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputElementPresets.resx">
+      <DependentUpon>InputElementPresets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputImmuneStatus.resx">
+      <DependentUpon>InputImmuneStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputAutoStatus.resx">
+      <DependentUpon>InputAutoStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputName.resx">
+      <DependentUpon>InputName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputPlantStatus.resx">
+      <DependentUpon>InputPlantStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputRanks.resx">
+      <DependentUpon>InputRanks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputSelectAbility.resx">
+      <DependentUpon>InputSelectAbility.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesForm.resx">
+      <DependentUpon>PropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

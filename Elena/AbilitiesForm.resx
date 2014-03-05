@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="treeNode6.ToolTipText" xml:space="preserve">
+    <value>The monster selects a single one of its allies and consumes it, instantly killing it and removing it from the battlefield. It then gains health equal to the monster's health - this is explicitly capable of increasing it beyond its maximum HP - and all statuses belonging to the monster it just ate are transferred to it with the timers that the eaten monster had.</value>
+  </data>
+  <data name="treeNode10.ToolTipText" xml:space="preserve">
+    <value>When "Call for Help" is taken, select a monster no more than 10 levels higher and of any difficulty and rank. When Call for Help is used, add that monster to the battle with 100 Delay. "Call for Help" cannot be performed more than once per battle.</value>
+  </data>
+  <data name="treeNode11.ToolTipText" xml:space="preserve">
+    <value>The monster possesses one or several alternate forms - these alternate forms possess the same attributes, level, difficulty and rank, but have their slots allocated differently, giving them different actions and properties. When this action is used, the monster morphs from one form to the other, taking on a new property and action set. If this form change reduces maximum HP and MP below their current values, reduce the current values to the new maximums.</value>
+  </data>
+  <data name="treeNode15.ToolTipText" xml:space="preserve">
+    <value>The monster shakes in anger at the statuses resting upon it. Status Shake can explicitly be performed even when affected by Stop, Stone or Sleep, and speeds statuses on the monster towards their expiry. As it bears no keywords, it is not sealed by Silence or Pain. It either reduces the timers on the monster or removes them. If a status duration is (U), it becomes (5). Status Shake affects both positive and negative statuses.</value>
+  </data>
+  <data name="treeNode18.ToolTipText" xml:space="preserve">
+    <value>Ability changes type from physical to magical or magical to physical. Replace the damage stat with ATK or MAG as appropriate - it now inflicts either physical or magical damage, as you selected. If it's now physical, it gains the Technique keyword and, if it inflicts damage, the Weapon keyword. Actions which are now magical gain the Magic and Spell keywords as well as an MP cost of 12 if it had none already, and all damage inflicted is of a selected element. (Abilities which are swapped from physical lose the weapon and technique keywords, abilities which are swapped from magical lose the magic and spell keywords. All costs, such as CTs or existing MP costs, are retained.)</value>
+  </data>
+  <data name="treeNode23.ToolTipText" xml:space="preserve">
+    <value>This ability is actually a reaction ability and not an action ability. Select a trigger and modify its CoS accordingly - the reaction is performed whenever the trigger is met. Strip all CTs, if present.</value>
+  </data>
+  <data name="treeNode24.ToolTipText" xml:space="preserve">
+    <value>The ability has +(2 x Monster Tier) Power, inflicting greater damage. If the monster is an M.Boss or a Boss, this modifier may be taken multiple times, greatly increasing the power. Increases delay by +5 or MP/tier by +20.</value>
+  </data>
+  <data name="treeNode25.ToolTipText" xml:space="preserve">
+    <value>Ranks of Critical allow the enemies to inflict devastating critical hits, expanding critical range by 5 per rank. (Weapon actions whose result rolls are equal to or less than the critical range value inflict +100% damage.)</value>
+  </data>
+  <data name="treeNode27.ToolTipText" xml:space="preserve">
+    <value>Select a status or effect. Add "Additionally, there is a 30 CoS to cause the selected Status (4) or Effect" to the ability. This rider, of course, bears the Status or Effect keyword. If the effect is Delay, it begins as Delay 5. If the effect is Gravity, pick a percentage.</value>
+  </data>
+  <data name="treeNode28.ToolTipText" xml:space="preserve">
+    <value>Select a status or effect. This ability causes that status or effect, with a duration of (4) if applicable. Ability has -20 CoS. If the effect is Delay, Delay begins as 5. If the effect is Gravity, pick a percentage.</value>
+  </data>
+  <data name="treeNode36.ToolTipText" xml:space="preserve">
+    <value>Select a negative status. This action can only be used while affected by that status. In fact, it's explicitly capable of being used while affected by that status, even if that status would normally prevent action, such as with Sleep, Stop or Stone. Apply this to actions that are weaker than what a monster usually does to create a "consolation prize" - you don't want the monster to be stopped in its tracks by Sleep, but you still want it to be slowed down a little. Maybe it snores?</value>
+  </data>
+</root>
